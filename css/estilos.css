@@ -7,7 +7,7 @@ body {
   }
   
   header {
-    background-color: #7e57c2;
+    background-color: #d1c4e9; /* Tons de roxo mais claro e pastel */
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -33,7 +33,7 @@ body {
   }
   
   footer {
-    background-color: #7e57c2;
+    background-color: #d1c4e9; /* Tons de roxo mais claro e pastel */
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -65,7 +65,7 @@ body {
   }
   
   form button {
-    background-color: #7e57c2;
+    background-color: #b39ddb; /* Tons de roxo mais claro e pastel */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -75,13 +75,13 @@ body {
   }
   
   form button:hover {
-    background-color: #5e35b1;
+    background-color: #9575cd; /* Tons de roxo mais claro e pastel */
   }
   
   section {
     margin: 20px auto;
     padding: 20px;
-    background-color: #ede7f6;
+    background-color: #e8eaf6; /* Tons de roxo mais claro e pastel */
     border-radius: 10px;
     max-width: 800px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
