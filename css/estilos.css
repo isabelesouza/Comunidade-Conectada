@@ -81,6 +81,65 @@ main h2 {
 main p {
   margin-bottom: 20px;
 }
+/* Estilos para a seção de descrição */
+.descricao {
+  margin-bottom: 40px;
+}
+
+.descricao h2 {
+  color: #6a0dad; /* Roxo */
+}
+
+.descricao p {
+  color: #333; /* Cor do texto padrão */
+}
+
+/* Estilos para a seção de perguntas e respostas */
+.perguntas-respostas {
+  border: 2px solid #6a0dad; /* Borda roxa */
+  border-radius: 10px; /* Bordas arredondadas */
+  padding: 20px;
+}
+
+.perguntas-respostas h2 {
+  color: #6a0dad; /* Roxo */
+  margin-bottom: 20px;
+}
+
+.pergunta {
+  margin-bottom: 20px;
+}
+
+.pergunta-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pergunta-header h3 {
+  color: #333; /* Cor do texto padrão */
+}
+
+.toggle-resposta {
+  background-color: #6a0dad; /* Roxo */
+  color: #fff; /* Cor do texto branco */
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.toggle-resposta:hover {
+  background-color: #531e8d; /* Roxo mais escuro */
+}
+
+.resposta {
+  display: none;
+}
+
+.resposta p {
+  color: #333; /* Cor do texto padrão */
+}
 
 footer {
   background-color: #dcd6f7; /* Lilás pastel mais claro */
