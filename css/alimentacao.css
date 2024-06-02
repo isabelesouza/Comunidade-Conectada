@@ -103,6 +103,7 @@ contact-card a:hover {
   text-decoration: underline;
 }
 
+/* Adiciona estilo ao formulário de doação */
 .donation-form {
   background-color: #fff;
   border: 2px solid #6a0dad;
@@ -114,75 +115,35 @@ contact-card a:hover {
 .donation-form label {
   display: block;
   margin-bottom: 10px;
+  color: #6a0dad; /* Cor do texto */
 }
 
-.donation-form input[type="radio"] {
-  display: none; /* Esconder os botões de rádio padrão */
-}
-
-.donation-form label {
-  position: relative; /* Permite posicionar os pseudo-elementos corretamente */
-  padding-left: 30px; /* Espaçamento para os pseudo-elementos */
-  cursor: pointer;
-}
-
-.donation-form label span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px; /* Tamanho do círculo */
-  height: 20px; /* Tamanho do círculo */
-  border: 2px solid #6a0dad; /* Cor da borda */
-  border-radius: 50%; /* Forma de círculo */
-}
-
-.donation-form input[type="radio"]:checked + span::after {
-  content: ''; /* Adiciona um círculo interno */
-  position: absolute;
-  top: 4px; /* Ajusta a posição verticalmente */
-  left: 4px; /* Ajusta a posição horizontalmente */
-  width: 12px; /* Tamanho do círculo interno */
-  height: 12px; /* Tamanho do círculo interno */
-  background-color: #6a0dad; /* Cor do círculo interno */
-  border-radius: 50%; /* Forma de círculo */
-}
-
-.donation-form input[type="text"] {
-  width: calc(100% - 40px); /* Ajusta a largura */
+.donation-form input[type="radio"],
+.donation-form input[type="text"],
+.donation-form textarea,
+.donation-form button {
+  width: 100%;
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid #6a0dad; /* Cor da borda */
-  border-radius: 5px; /* Bordas levemente arredondadas */
-  font-family: 'Lato', sans-serif; /* Fonte personalizada */
-  font-size: 16px; /* Tamanho da fonte */
-  color: #6a0dad; /* Cor do texto */
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .donation-form textarea {
-  width: calc(100% - 40px); /* Ajusta a largura */
-  height: 100px; /* Altura da caixa de texto */
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #6a0dad; /* Cor da borda */
-  border-radius: 5px; /* Bordas levemente arredondadas */
-  font-family: 'Lato', sans-serif; /* Fonte personalizada */
-  font-size: 16px; /* Tamanho da fonte */
-  color: #6a0dad; /* Cor do texto */
+  height: 150px; /* Ajusta a altura da caixa de texto */
 }
 
 .donation-form button {
-  width: calc(100% - 40px); /* Ajusta a largura */
-  padding: 10px;
-  background-color: #6a0dad; /* Cor do botão */
-  color: #fff; /* Cor do texto do botão */
+  background-color: #6a0dad;
+  color: #fff;
   border: none;
-  border-radius: 5px; /* Bordas levemente arredondadas */
   cursor: pointer;
 }
 
 .donation-form button:hover {
   background-color: #531e8d; /* Cor do botão ao passar o mouse */
 }
+
 /* Estilos para a seção de receitas */
 .receitas-container {
   display: flex;

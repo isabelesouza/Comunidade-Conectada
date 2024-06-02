@@ -32,25 +32,30 @@
         <p><span class="icon">📞</span> Whatsapp: (85) 98965-1386</p>
         <p><span class="icon">✉️</span> E-mail: <a href="mailto:contato.sos.periferia@gmail.com">contato.sos.periferia@gmail.com</a></p>
         <p><span class="icon">📸</span> Instagram: <a href="https://instagram.com/sos.periferia" target="_blank">@sos.periferia</a></p>
-      </div>
-      <form>
-        <label>
-          <input type="radio" name="donation-type" value="needs" required>
-          Estou precisando de alimentos
-          <span></span>
-        </label>
-        <label>
-          <input type="radio" name="donation-type" value="has" required>
-          Tenho alimentos sobrando
-          <span></span>
-        </label>
-        <label for="description">Descreva sua necessidade ou doação:</label>
-        <input type="text" id="description" name="description" placeholder="Descreva sua necessidade ou doação..." required>
-        <label for="contact-info">Forma de contato:</label>
-        <input type="text" id="contact-info" name="contact-info" placeholder="Forma de contato: Whatsapp, E-mail, etc." required>
-        <button type="submit">Enviar</button>
-      </form>
-      </div>
+        <div class="donation-form">
+          <form>
+            <div>
+              <input type="radio" id="need-food" name="donation-type" value="needs" required>
+              <label for="need-food">Estou precisando de alimentos</label>
+            </div>
+            <div>
+              <input type="radio" id="have-food" name="donation-type" value="has" required>
+              <label for="have-food">Tenho alimentos sobrando</label>
+            </div>
+            <div>
+              <label for="description">Descreva sua necessidade ou doação:</label>
+              <textarea id="description" name="description"></textarea>
+            </div>
+            <div>
+              <label for="contact-info">Forma de contato:</label>
+              <input type="text" id="contact-info" name="contact-info" placeholder="Whatsapp, E-mail, etc." required>
+            </div>
+            <div>
+              <button type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+        
     </section>
     <section id="distribuicao" class="tab-content">
       <h2>Distribuição de Alimentos</h2>
