@@ -11,10 +11,10 @@ header {
   position: relative;
 }
 header img.platform-icon {
-  width: 90px; /* Ajuste o tamanho conforme desejado */
+  width: 100px; /* Ajuste o tamanho conforme desejado */
   height: auto; /* Mantém a proporção */
-  margin-right: 15px; /* Adiciona um espaço à direita do ícone */
-  margin-top: 12px; /* Adiciona um espaço acima do ícone */
+  margin-right: 10px; /* Adiciona um espaço à direita do ícone */
+  margin-top: 10px; /* Adiciona um espaço acima do ícone */
 }
 
 
