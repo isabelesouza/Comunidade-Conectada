@@ -32,8 +32,8 @@ body {
   nav a img.icon {
     display: block;
     margin: 0 auto;
-    width: 20px;
-    height: 20px;
+    width: 100px;
+    height: 100px;
   }
   
   main {
@@ -50,10 +50,8 @@ body {
     justify-content: center;
     margin-right: 10px; /* Ajuste o espaçamento à direita conforme necessário */
   }
-  
-  .icon img {
-    max-width: 70%; /* Ajuste o tamanho máximo da imagem */
-    max-height: 70%; /* Ajuste o tamanho máximo da imagem */
+  .icon span {
+    margin-top: 5px; /* Ajuste o espaçamento entre a imagem e o texto conforme necessário */
   }
   
   footer {
