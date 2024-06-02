@@ -144,6 +144,74 @@ contact-card a:hover {
   background-color: #531e8d; /* Cor do botão ao passar o mouse */
 }
 
+#educacao {
+  background-color: #dcd6f7;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.educacao-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.educacao-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.educacao-content h2 {
+  color: #6a0dad;
+}
+
+.educacao-content p {
+  color: #333;
+}
+
+.educacao-content h3 {
+  color: #6a0dad;
+}
+
+.educacao-content ul {
+  list-style: none;
+}
+
+.educacao-content ul li {
+  margin-bottom: 10px;
+}
+
+.educacao-content .emoji {
+  margin-right: 10px;
+}
+
+.educacao-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background-color: #fff;
+  border: 2px solid #6a0dad;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.card .icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.card h4 {
+  color: #6a0dad;
+  margin: 0;
+}
+
+
 /* Estilos para a seção de receitas */
 .receitas-container {
   display: flex;
