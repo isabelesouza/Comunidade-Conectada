@@ -48,6 +48,7 @@ nav a {
   width: 150px; /* Largura do quadrado */
   height: 150px; /* Altura do quadrado */
   transition: background-color 0.3s;
+  box-sizing: border-box; /* Para incluir padding na largura/altura total */
 }
 
 .icon-container:hover {
@@ -55,14 +56,17 @@ nav a {
 }
 
 .icon {
-  width: 85px; /* Largura da imagem */
-  height: 85px; /* Altura da imagem */
+  width: 80px; /* Largura da imagem */
+  height: 80px; /* Altura da imagem */
   margin-bottom: 10px; /* Espaçamento entre imagem e texto */
 }
 
 .icon-container span {
   color: #6a0dad; /* Roxo */
-  font-size: 16px;
+  font-size: 14px; /* Tamanho do texto */
+  text-align: center;
+  display: block; /* Para garantir que o texto quebre em várias linhas, se necessário */
+  max-width: 100%; /* Garante que o texto não ultrapasse o container */
 }
 
 main {
@@ -96,11 +100,17 @@ footer p {
   nav {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly; /* Garante espaçamento uniforme entre os itens */
   }
 
   .icon-container {
     width: calc(50% - 10px); /* Calcula largura para caber dois itens por linha */
-    max-width: none;
+    height: auto; /* Permite que a altura se ajuste ao conteúdo */
+    padding: 20px; /* Adiciona padding para espaçamento interno */
+  }
+
+  .icon {
+    width: 70px; /* Ajusta a largura da imagem para caber melhor no container */
+    height: 70px; /* Ajusta a altura da imagem para caber melhor no container */
   }
 }
