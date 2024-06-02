@@ -96,21 +96,17 @@ footer p {
 }
 
 /* Responsividade */
+/* Responsividade */
 @media (max-width: 600px) {
   nav {
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly; /* Garante espaçamento uniforme entre os itens */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
   }
 
   .icon-container {
-    width: calc(50% - 10px); /* Calcula largura para caber dois itens por linha */
-    height: auto; /* Permite que a altura se ajuste ao conteúdo */
-    padding: 20px; /* Adiciona padding para espaçamento interno */
-  }
-
-  .icon {
-    width: 70px; /* Ajusta a largura da imagem para caber melhor no container */
-    height: 70px; /* Ajusta a altura da imagem para caber melhor no container */
+    width: 150px; /* Largura fixa dos ícones */
+    height: 150px; /* Altura fixa dos ícones */
+    margin: 10px; /* Espaçamento entre os ícones */
   }
 }
