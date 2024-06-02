@@ -139,17 +139,18 @@ contact-card a:hover {
 /* Estilos para a seção de receitas */
 .receitas-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
 }
 
 .receita {
-  width: 45%;
+  width: calc(50% - 10px); /* Ajusta a largura para 50% com espaçamento */
   background-color: #fff;
   border: 2px solid #6a0dad;
   border-radius: 10px;
   padding: 20px;
+  box-sizing: border-box; /* Mantém o padding dentro do elemento */
 }
 
 .receita-header {
@@ -178,6 +179,14 @@ contact-card a:hover {
   margin: 5px 0;
 }
 
+.receita-info h4 {
+  margin-top: 20px; /* Adiciona espaço entre ingredientes e modo de preparo */
+}
+
+.receita-info ul {
+  margin-bottom: 20px; /* Adiciona espaço abaixo da lista de ingredientes */
+}
+
 footer {
   background-color: #dcd6f7; /* Lilás pastel mais claro */
   padding: 10px;
@@ -193,19 +202,8 @@ footer p {
 
 /* Responsividade */
 @media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-  }
-
-  nav li {
-    flex: 1 1 100%;
-  }
-
-  .gallery img {
-    width: 100%;
-  }
-
   .receita {
-    width: 100%;
+    width: 100%; /* Define a largura total para 100% */
+    margin-bottom: 20px; /* Adiciona espaçamento entre as receitas */
   }
 }

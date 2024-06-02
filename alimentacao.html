@@ -20,33 +20,40 @@
       </ul>
     </nav>
   </header>
-  
   <main>
     <section id="doacoes" class="tab-content">
       <h2>Doações de Alimentos</h2>
-      <p>Facilitamos a doação e distribuição de alimentos excedentes da comunidade. Através de parcerias com mercados e produtores locais, coletamos alimentos que seriam descartados e os distribuímos para famílias necessitadas. Disponibilizamos diversas formas de contato para que as doações sejam realizadas, além de tornar-mos possível que nessa aba sejam feitas doações entres os próprios moradores da comunidade, além de trocas de alimentos necessitados.</p>
       <div class="gallery">
-        <img src="imagens/doacao1.png" alt="Doação 1">
-        <img src="imagens/doacao2.png" alt="Doação 2">
+        <img src="imagens/doacao1.jpg" alt="Imagem de doação">
+        <img src="imagens/doacao2.jpg" alt="Imagem de doação">
+        <img src="imagens/doacao3.jpg" alt="Imagem de doação">
       </div>
       <div class="contact-card">
-        <h3>Contato S.O.S Periferia</h3>
         <p><span class="icon">📞</span> Whatsapp: (85) 98965-1386</p>
-        <p><span class="icon">📧</span> E-mail: <a href="mailto:contato.sos.periferia@gmail.com">contato.sos.periferia@gmail.com</a></p>
-        <p><span class="icon">📷</span> Instagram: <a href="https://www.instagram.com/sos.periferia" target="_blank">@sos.periferia</a></p>
+        <p><span class="icon">✉️</span> E-mail: <a href="mailto:contato.sos.periferia@gmail.com">contato.sos.periferia@gmail.com</a></p>
+        <p><span class="icon">📸</span> Instagram: <a href="https://instagram.com/sos.periferia" target="_blank">@sos.periferia</a></p>
       </div>
       <div class="donation-form">
-        <h3>Doação de Alimentos</h3>
         <form>
-          <label for="tipo-doacao">Tipo de Doação</label>
-          <select id="tipo-doacao" name="tipo-doacao">
-            <option value="necessidade">Estou Necessitando de Alimentos</option>
-            <option value="sobrando">Tenho Alimentos Sobrando</option>
+          <label>
+            <input type="radio" name="donation-type" value="needs" required>
+            Estou precisando de alimentos
+          </label>
+          <label>
+            <input type="radio" name="donation-type" value="has" required>
+            Tenho alimentos sobrando
+          </label>
+          <label for="food-type">Tipo de alimento:</label>
+          <select id="food-type" name="food-type" multiple required>
+            <option value="arroz">Arroz</option>
+            <option value="feijao">Feijão</option>
+            <option value="macarrao">Macarrão</option>
+            <option value="farinha">Farinha</option>
+            <option value="oleo">Óleo</option>
+            <option value="outros">Outros</option>
           </select>
-          <label for="descricao">Descrição</label>
-          <input type="text" id="descricao" name="descricao">
-          <label for="contato">Forma de Contato</label>
-          <input type="text" id="contato" name="contato">
+          <label for="contact-info">Forma de contato:</label>
+          <input type="text" id="contact-info" name="contact-info" placeholder="Ex: Whatsapp, E-mail" required>
           <button type="submit">Enviar</button>
         </form>
       </div>
@@ -138,4 +145,3 @@
   <script src="js/alimentacao.js"></script>
 </body>
 </html>
-
