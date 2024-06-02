@@ -24,38 +24,37 @@
     <section id="doacoes" class="tab-content">
       <h2>Doações de Alimentos</h2>
       <div class="gallery">
-        <img src="imagens/doacao1.jpg" alt="Imagem de doação">
-        <img src="imagens/doacao2.jpg" alt="Imagem de doação">
-        <img src="imagens/doacao3.jpg" alt="Imagem de doação">
+        <img src="imagens/doacao1.png" alt="Imagem de doação">
+        <img src="imagens/doacao2.png" alt="Imagem de doação">
+  
       </div>
       <div class="contact-card">
         <p><span class="icon">📞</span> Whatsapp: (85) 98965-1386</p>
         <p><span class="icon">✉️</span> E-mail: <a href="mailto:contato.sos.periferia@gmail.com">contato.sos.periferia@gmail.com</a></p>
         <p><span class="icon">📸</span> Instagram: <a href="https://instagram.com/sos.periferia" target="_blank">@sos.periferia</a></p>
       </div>
-      <div class="donation-form">
-        <form>
-          <label>
-            <input type="radio" name="donation-type" value="needs" required>
-            Estou precisando de alimentos
-          </label>
-          <label>
-            <input type="radio" name="donation-type" value="has" required>
-            Tenho alimentos sobrando
-          </label>
-          <label for="food-type">Tipo de alimento:</label>
-          <select id="food-type" name="food-type" multiple required>
-            <option value="arroz">Arroz</option>
-            <option value="feijao">Feijão</option>
-            <option value="macarrao">Macarrão</option>
-            <option value="farinha">Farinha</option>
-            <option value="oleo">Óleo</option>
-            <option value="outros">Outros</option>
-          </select>
-          <label for="contact-info">Forma de contato:</label>
-          <input type="text" id="contact-info" name="contact-info" placeholder="Ex: Whatsapp, E-mail" required>
-          <button type="submit">Enviar</button>
-        </form>
+      <form class="donation-form">
+        <label>
+          <input type="radio" name="donation-type" value="needs" required>
+          <span>Estou precisando de alimentos</span>
+        </label>
+        <label>
+          <input type="radio" name="donation-type" value="has" required>
+          <span>Tenho alimentos sobrando</span>
+        </label>
+        <label for="food-type">Tipo de alimento:</label>
+        <select id="food-type" name="food-type" multiple required>
+          <option value="arroz">Arroz</option>
+          <option value="feijao">Feijão</option>
+          <option value="macarrao">Macarrão</option>
+          <option value="farinha">Farinha</option>
+          <option value="oleo">Óleo</option>
+          <option value="outros">Outros</option>
+        </select>
+        <label for="contact-info">Forma de contato:</label>
+        <input type="text" id="contact-info" name="contact-info" placeholder="Ex: Whatsapp, E-mail" required>
+        <button type="submit">Enviar</button>
+      </form>      
       </div>
     </section>
     <section id="distribuicao" class="tab-content">
