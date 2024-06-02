@@ -41,25 +41,25 @@ body {
     text-align: center;
   }
   .icon {
-    width: 50px; /* Tamanho desejado para os ícones */
-    height: 50px; /* Tamanho desejado para os ícones */
-    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    width: 150px; /* Largura total do quadrado (incluindo imagem e texto) */
+    height: 100px; /* Altura do quadrado */
     border-radius: 10px; /* Borda arredondada */
     background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo com transparência */
-    display: flex; /* Permite alinhar o texto verticalmente */
-    align-items: center; /* Alinha o texto verticalmente */
+    display: flex; /* Utiliza flexbox */
+    flex-direction: column; /* Orientação do layout em coluna */
+    align-items: center; /* Alinha os itens horizontalmente */
+    justify-content: center; /* Alinha os itens verticalmente */
     padding: 5px; /* Espaçamento interno */
     text-decoration: none; /* Remove sublinhado do link */
     color: #000; /* Cor do texto */
   }
   
   .icon img {
-    margin-right: 5px; /* Espaçamento entre a imagem e o texto */
+    width: 40px; /* Largura da imagem */
+    height: 40px; /* Altura da imagem */
+    margin-bottom: 5px; /* Espaçamento entre imagem e texto */
   }
   
-  .icon span {
-    margin-top: 5px; /* Ajuste o espaçamento entre a imagem e o texto conforme necessário */
-  }
   
   footer {
     background-color: #dcd6f7; /* Lilás pastel mais claro */
