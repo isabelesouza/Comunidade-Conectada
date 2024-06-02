@@ -33,28 +33,21 @@
         <p><span class="icon">✉️</span> E-mail: <a href="mailto:contato.sos.periferia@gmail.com">contato.sos.periferia@gmail.com</a></p>
         <p><span class="icon">📸</span> Instagram: <a href="https://instagram.com/sos.periferia" target="_blank">@sos.periferia</a></p>
       </div>
-      <form class="donation-form">
+      <form>
         <label>
           <input type="radio" name="donation-type" value="needs" required>
-          <span>Estou precisando de alimentos</span>
+          Estou precisando de alimentos
+          <span></span>
         </label>
         <label>
           <input type="radio" name="donation-type" value="has" required>
-          <span>Tenho alimentos sobrando</span>
+          Tenho alimentos sobrando
+          <span></span>
         </label>
-        <label for="food-type">Tipo de alimento:</label>
-        <select id="food-type" name="food-type" multiple required>
-          <option value="arroz">Arroz</option>
-          <option value="feijao">Feijão</option>
-          <option value="macarrao">Macarrão</option>
-          <option value="farinha">Farinha</option>
-          <option value="oleo">Óleo</option>
-          <option value="outros">Outros</option>
-        </select>
-        <label for="contact-info">Forma de contato:</label>
-        <input type="text" id="contact-info" name="contact-info" placeholder="Ex: Whatsapp, E-mail" required>
+        <input type="text" id="description" name="description" placeholder="Descreva sua necessidade ou doação..." required>
+        <input type="text" id="contact-info" name="contact-info" placeholder="Forma de contato: Whatsapp, E-mail, etc." required>
         <button type="submit">Enviar</button>
-      </form>      
+      </form>
       </div>
     </section>
     <section id="distribuicao" class="tab-content">

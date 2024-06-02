@@ -103,75 +103,74 @@ contact-card a:hover {
   text-decoration: underline;
 }
 
-/* Adições para o estilo do formulário de doação */
-.donation-form label {
-  display: block;
-  margin-bottom: 10px;
-  text-align: left;
-}
+  /* Estilos do formulário */
+  .donation-form {
+    background-color: #fff;
+    border: 2px solid #6a0dad;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-.donation-form input[type="radio"] {
-  display: none; /* Esconder os botões de rádio padrão */
-}
+  .donation-form label {
+    flex-basis: 48%; /* Ajusta a largura das labels */
+  }
 
-.donation-form label {
-  position: relative; /* Permite posicionar os pseudo-elementos corretamente */
-  padding-left: 30px; /* Espaçamento para os pseudo-elementos */
-  cursor: pointer;
-}
+  .donation-form input[type="radio"] {
+    display: none; /* Esconder os botões de rádio padrão */
+  }
 
-.donation-form label span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px; /* Tamanho do círculo */
-  height: 20px; /* Tamanho do círculo */
-  border: 2px solid #6a0dad; /* Cor da borda */
-  border-radius: 50%; /* Forma de círculo */
-}
+  .donation-form label {
+    position: relative; /* Permite posicionar os pseudo-elementos corretamente */
+    padding-left: 30px; /* Espaçamento para os pseudo-elementos */
+    cursor: pointer;
+  }
 
-.donation-form input[type="radio"]:checked + span::after {
-  content: ''; /* Adiciona um círculo interno */
-  position: absolute;
-  top: 4px; /* Ajusta a posição verticalmente */
-  left: 4px; /* Ajusta a posição horizontalmente */
-  width: 12px; /* Tamanho do círculo interno */
-  height: 12px; /* Tamanho do círculo interno */
-  background-color: #6a0dad; /* Cor do círculo interno */
-  border-radius: 50%; /* Forma de círculo */
-}
+  .donation-form label span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px; /* Tamanho do círculo */
+    height: 20px; /* Tamanho do círculo */
+    border: 2px solid #6a0dad; /* Cor da borda */
+    border-radius: 50%; /* Forma de círculo */
+  }
 
-.donation-form select {
-  appearance: none; /* Remove a aparência padrão do select */
-  padding: 10px;
-  border: 1px solid #6a0dad; /* Cor da borda */
-  border-radius: 5px; /* Bordas levemente arredondadas */
-  background-color: #fff; /* Cor de fundo */
-  color: #6a0dad; /* Cor do texto */
-}
+  .donation-form input[type="radio"]:checked + span::after {
+    content: ''; /* Adiciona um círculo interno */
+    position: absolute;
+    top: 4px; /* Ajusta a posição verticalmente */
+    left: 4px; /* Ajusta a posição horizontalmente */
+    width: 12px; /* Tamanho do círculo interno */
+    height: 12px; /* Tamanho do círculo interno */
+    background-color: #6a0dad; /* Cor do círculo interno */
+    border-radius: 50%; /* Forma de círculo */
+  }
 
-.donation-form input[type="text"],
-.donation-form button {
-  width: calc(100% - 22px); /* Ajusta a largura */
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #6a0dad; /* Cor da borda */
-  border-radius: 5px; /* Bordas levemente arredondadas */
-  background-color: #fff; /* Cor de fundo */
-  color: #6a0dad; /* Cor do texto */
-}
+  .donation-form input[type="text"] {
+    width: 100%; /* Ajusta a largura */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #6a0dad; /* Cor da borda */
+    border-radius: 5px; /* Bordas levemente arredondadas */
+  }
 
-.donation-form button {
-  background-color: #6a0dad; /* Cor do botão */
-  color: #fff; /* Cor do texto do botão */
-  border: none;
-  cursor: pointer;
-}
+  .donation-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6a0dad; /* Cor do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 5px; /* Bordas levemente arredondadas */
+    cursor: pointer;
+  }
 
-.donation-form button:hover {
-  background-color: #531e8d; /* Cor do botão ao passar o mouse */
-}
-
+  .donation-form button:hover {
+    background-color: #531e8d; /* Cor do botão ao passar o mouse */
+  }
 /* Estilos para a seção de receitas */
 .receitas-container {
   display: flex;
