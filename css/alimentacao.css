@@ -1,78 +1,136 @@
+/* Importação da fonte Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 /* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f3f0ff; /* Lilás pastel */
-    color: #333;
-  }
-  
-  header {
-    background-color: #dcd6f7; /* Lilás pastel mais claro */
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  header h1 {
-    color: #6a0dad; /* Roxo */
-    margin: 0;
-    font-size: 2em;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-  nav ul li {
-    margin: 0 10px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #6a0dad; /* Roxo */
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  nav ul li a:hover,
-  nav ul li a.active {
-    background-color: #6a0dad; /* Roxo */
-    color: #fff; /* Branco */
-  }
-  
-  main {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .tab-content {
-    display: none;
-  }
-  
-  .tab-content.active {
-    display: block;
-  }
-  
-  footer {
-    background-color: #dcd6f7; /* Lilás pastel mais claro */
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  footer p {
-    margin: 0;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f3f0ff; /* Lilás pastel */
+  color: #333;
+}
+
+header {
+  background-color: #dcd6f7; /* Lilás pastel mais claro */
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  color: #6a0dad; /* Roxo */
+  margin: 0;
+  font-size: 2em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #6a0dad; /* Roxo */
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #6a0dad; /* Roxo */
+  color: #fff; /* Branco */
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.receitas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.receita {
+  background-color: rgba(255, 255, 255, 0.9); /* Branco levemente transparente */
+  border: 1px solid #dcd6f7;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.receita-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.receita-header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.receita-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.receita-info h3 {
+  color: #6a0dad; /* Roxo */
+  margin: 0 0 5px 0;
+}
+
+.receita-info p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  color: #6a0dad; /* Roxo */
+}
+
+.receita-info .icon {
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+
+.receita ul {
+  text-align: left;
+}
+
+footer {
+  background-color: #dcd6f7; /* Lilás pastel mais claro */
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
