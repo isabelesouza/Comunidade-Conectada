@@ -7,6 +7,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+header {
+  position: relative;
+}
+
+header img {
+  position: absolute;
+  left: 10px; /* Ajuste a posição conforme necessário */
+  top: 10px; /* Ajuste a posição conforme necessário */
+  width: 50px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+}
 
 body {
   font-family: Arial, sans-serif;
