@@ -94,11 +94,13 @@ footer p {
 /* Responsividade */
 @media (max-width: 600px) {
   nav {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .icon-container {
-    width: 100%;
-    max-width: 150px;
+    width: calc(50% - 10px); /* Calcula largura para caber dois itens por linha */
+    max-width: none;
   }
 }
