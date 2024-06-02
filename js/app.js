@@ -4,8 +4,11 @@ const toggleButtons = document.querySelectorAll('.toggle-resposta');
 // Adicione um ouvinte de evento de clique a cada botão
 toggleButtons.forEach(button => {
   button.addEventListener('click', () => {
+    // Selecione o ID da resposta associada ao botão atual
+    const respostaId = button.dataset.target;
+
     // Selecione a resposta associada ao botão atual
-    const resposta = button.parentElement.nextElementSibling;
+    const resposta = document.getElementById(respostaId);
 
     // Alternar a exibição da resposta
     resposta.classList.toggle('visivel');
