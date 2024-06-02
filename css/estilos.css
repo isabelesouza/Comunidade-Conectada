@@ -1,30 +1,39 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff; /* Fundo branco */
+    background-color: #f3f0ff; /* Lilás pastel */
     color: #333;
     margin: 0;
     padding: 0;
   }
   
   header {
-    background-color: #d7bde2; /* Lilás pastel */
-    color: white;
-    padding: 10px 0;
+    background-color: #dcd6f7; /* Lilás pastel mais claro */
+    padding: 20px;
     text-align: center;
   }
   
   header h1 {
+    color: #6a0dad; /* Roxo */
     margin: 0;
   }
   
-  nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
+  nav {
+    margin-top: 10px;
   }
   
-  nav a:hover {
-    text-decoration: underline;
+  nav a {
+    color: #6a0dad; /* Roxo */
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  nav a img.icon {
+    display: block;
+    margin: 0 auto;
+    width: 20px;
+    height: 20px;
   }
   
   main {
@@ -33,57 +42,19 @@ body {
   }
   
   footer {
-    background-color: #d7bde2; /* Lilás pastel */
-    color: white;
+    background-color: #dcd6f7; /* Lilás pastel mais claro */
+    padding: 10px;
     text-align: center;
-    padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
   }
   
-  form {
-    background-color: #f7f7f7; /* Fundo branco para o formulário */
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
-    max-width: 400px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  footer p {
+    margin: 0;
   }
   
-  form label {
-    display: block;
-    margin: 10px 0 5px;
-  }
-  
-  form input {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin: 0 auto;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-  }
-  
-  form button {
-    background-color: #af7ac5; /* Lilás mais escuro */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  form button:hover {
-    background-color: #9b59b6; /* Lilás mais escuro */
-  }
-  
-  section {
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f5eef8; /* Lilás pastel bem claro */
-    border-radius: 10px;
-    max-width: 800px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  .container {
+    text-align: center;
   }
   
