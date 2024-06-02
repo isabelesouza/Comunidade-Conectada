@@ -13,4 +13,5 @@ toggleButtons.forEach(button => {
     // Alterar o texto do botão baseado na visibilidade da resposta
     button.textContent = resposta.classList.contains('visivel') ? '-' : '+';
   });
-});
+});   
+
