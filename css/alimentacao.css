@@ -28,19 +28,28 @@ header h1 {
   margin-bottom: 20px; /* Aumenta a distância entre o título e as abas */
 }
 
-nav {
+nav ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  flex: 1 1 200px; /* Garante que os itens se ajustem no espaço disponível */
 }
 
 nav a {
+  display: block;
   text-decoration: none;
   padding: 10px 20px;
   background-color: #6a0dad; /* Roxo */
   color: #fff;
   border-radius: 10px; /* Bordas levemente arredondadas */
   transition: background-color 0.3s;
+  text-align: center;
 }
 
 nav a:hover {
@@ -90,7 +99,7 @@ main p {
   text-decoration: none;
 }
 
-.contact-card a:hover {
+contact-card a:hover {
   text-decoration: underline;
 }
 
@@ -184,8 +193,12 @@ footer p {
 
 /* Responsividade */
 @media (max-width: 600px) {
-  nav {
+  nav ul {
     flex-direction: column;
+  }
+
+  nav li {
+    flex: 1 1 100%;
   }
 
   .gallery img {
