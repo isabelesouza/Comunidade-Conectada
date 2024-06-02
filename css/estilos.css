@@ -1,13 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f3e5f5;
+    background-color: #ffffff; /* Fundo branco */
     color: #333;
     margin: 0;
     padding: 0;
   }
   
   header {
-    background-color: #d1c4e9; /* Tons de roxo mais claro e pastel */
+    background-color: #d7bde2; /* Lilás pastel */
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -33,7 +33,7 @@ body {
   }
   
   footer {
-    background-color: #d1c4e9; /* Tons de roxo mais claro e pastel */
+    background-color: #d7bde2; /* Lilás pastel */
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -43,7 +43,7 @@ body {
   }
   
   form {
-    background-color: white;
+    background-color: #f7f7f7; /* Fundo branco para o formulário */
     padding: 20px;
     margin: 20px auto;
     border-radius: 10px;
@@ -65,7 +65,7 @@ body {
   }
   
   form button {
-    background-color: #b39ddb; /* Tons de roxo mais claro e pastel */
+    background-color: #af7ac5; /* Lilás mais escuro */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -75,13 +75,13 @@ body {
   }
   
   form button:hover {
-    background-color: #9575cd; /* Tons de roxo mais claro e pastel */
+    background-color: #9b59b6; /* Lilás mais escuro */
   }
   
   section {
     margin: 20px auto;
     padding: 20px;
-    background-color: #e8eaf6; /* Tons de roxo mais claro e pastel */
+    background-color: #f5eef8; /* Lilás pastel bem claro */
     border-radius: 10px;
     max-width: 800px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
