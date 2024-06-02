@@ -1,0 +1,50 @@
+/* Importação da fonte Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo dos cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 2px solid #6a0dad; /* Roxo */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: calc(50% - 20px); /* Ajusta a largura para ocupar metade da tela com espaçamento */
+  }
+  
+  .card h2 {
+    color: #6a0dad; /* Roxo */
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    color: #333; /* Cor do texto principal */
+    margin-bottom: 20px;
+  }
+  
+  .card a {
+    display: inline-block;
+    background-color: #6a0dad; /* Roxo */
+    color: #fff; /* Cor do texto do link */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .card a:hover {
+    background-color: #531e8d; /* Roxo mais escuro */
+  }
+  
