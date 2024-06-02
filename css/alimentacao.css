@@ -144,6 +144,54 @@ contact-card a:hover {
   background-color: #531e8d; /* Cor do botão ao passar o mouse */
 }
 
+#distribuicao {
+  background-color: #dcd6f7;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#distribuicao h2 {
+  color: #6a0dad;
+}
+
+#distribuicao p {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.gallery img {
+  width: calc(33.33% - 10px); /* Calcula o tamanho para ocupar 1/3 da largura com espaçamento */
+  border-radius: 10px;
+}
+
+.card {
+  background-color: #fff;
+  border: 2px solid #6a0dad;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card p {
+  color: #6a0dad;
+}
+
+.card a {
+  color: #6a0dad;
+  text-decoration: underline;
+}
+
+
+
 #educacao {
   background-color: #dcd6f7;
   padding: 20px;
