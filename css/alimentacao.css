@@ -12,8 +12,6 @@ body {
   font-family: 'Lato', sans-serif;
   background-color: #f3f0ff; /* Lilás pastel */
   color: #333;
-  margin: 0;
-  padding: 0;
 }
 
 header {
@@ -27,12 +25,11 @@ header h1 {
   margin: 0;
 }
 
-nav {
+nav ul {
+  list-style: none;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  margin-top: 10px;
 }
 
 nav a {
@@ -42,50 +39,67 @@ nav a {
 }
 
 nav a:hover {
-  color: #531e8d; /* Roxo mais escuro */
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
 }
 
 .tab-content {
   display: none;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
 .tab-content.active {
   display: block;
 }
 
+h2 {
+  color: #6a0dad; /* Roxo */
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
 .gallery {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 10px;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .gallery img {
-  width: 45%;
+  width: 100%;
+  max-width: 200px;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-card {
-  background-color: #ffffff;
-  border: 2px solid #6a0dad; /* Roxo */
+  background-color: #dcd6f7; /* Lilás pastel mais claro */
   border-radius: 10px;
   padding: 20px;
-  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: left;
 }
 
 .contact-card h3 {
-  color: #6a0dad; /* Roxo */
+  margin-bottom: 10px;
 }
 
 .contact-card p {
-  color: #333;
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 
-.contact-card .icon {
+.contact-card p .icon {
   margin-right: 10px;
 }
 
@@ -99,46 +113,88 @@ nav a:hover {
 }
 
 .donation-form {
-  background-color: #ffffff;
-  border: 2px solid #6a0dad; /* Roxo */
+  background-color: #dcd6f7; /* Lilás pastel mais claro */
   border-radius: 10px;
   padding: 20px;
-  margin-top: 20px;
-  text-align: left;
 }
 
 .donation-form h3 {
-  color: #6a0dad; /* Roxo */
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .donation-form label {
   display: block;
   margin-bottom: 5px;
-  color: #333;
 }
 
 .donation-form input,
-.donation-form select,
-.donation-form textarea,
-.donation-form button {
+.donation-form select {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-family: 'Lato', sans-serif;
 }
 
 .donation-form button {
   background-color: #6a0dad; /* Roxo */
   color: #fff;
   border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
 .donation-form button:hover {
   background-color: #531e8d; /* Roxo mais escuro */
+}
+
+.receitas-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.receita {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 300px;
+  text-align: left;
+}
+
+.receita-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.receita-header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.receita-info h3 {
+  margin: 0;
+  color: #6a0dad; /* Roxo */
+}
+
+.receita-info p {
+  margin: 0;
+}
+
+.receita p {
+  padding: 10px;
+}
+
+.receita ul {
+  padding: 10px;
+  list-style: disc;
+  margin-left: 20px;
 }
 
 footer {
@@ -156,15 +212,15 @@ footer p {
 
 /* Responsividade */
 @media (max-width: 600px) {
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centraliza os ícones horizontalmente */
+  nav ul {
+    flex-direction: column;
   }
 
-  .icon-container {
-    width: 150px; /* Largura fixa dos ícones */
-    height: 150px; /* Altura fixa dos ícones */
-    margin: 10px; /* Espaçamento entre os ícones */
+  .gallery {
+    flex-direction: column;
+  }
+
+  .receitas-container {
+    flex-direction: column;
   }
 }
