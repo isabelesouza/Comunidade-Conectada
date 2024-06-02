@@ -1,17 +1,26 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const tabLinks = document.querySelectorAll('.tab-link');
+document.addEventListener('DOMContentLoaded', function () {
+  const tabs = document.querySelectorAll('.tab-link');
   const tabContents = document.querySelectorAll('.tab-content');
 
-  tabLinks.forEach(link => {
-    link.addEventListener('click', function(event) {
+  tabs.forEach(tab => {
+    tab.addEventListener('click', function (event) {
       event.preventDefault();
-      const tabId = this.getAttribute('data-tab');
+      const target = this.getAttribute('data-tab');
 
       tabContents.forEach(content => {
-        content.classList.remove('active');
+        content.style.display = 'none';
       });
 
-      document.getElementById(tabId).classList.add('active');
+      document.getElementById(target).style.display = 'block';
+
+      tabs.forEach(tab => {
+        tab.classList.remove('active');
+      });
+
+      this.classList.add('active');
     });
   });
+
+  // Default to showing the first tab
+  tabs[0].click();
 });
