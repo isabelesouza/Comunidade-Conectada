@@ -136,10 +136,13 @@ main p {
 .resposta {
   display: none;
 }
-
+.resposta.visivel {
+  display: block;
+}
 .resposta p {
   color: #333; /* Cor do texto padrão */
 }
+
 
 footer {
   background-color: #dcd6f7; /* Lilás pastel mais claro */
