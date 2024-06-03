@@ -66,9 +66,9 @@ main {
 }
 
 .card .icon {
-  width: 60px; /* Ajusta o tamanho dos ícones */
+  width: 200px; /* Ajusta o tamanho dos ícones */
   height: auto;
-  margin-bottom: 15px;
+  margin-bottom: 28px;
 }
 
 .card .preview {
