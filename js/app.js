@@ -60,18 +60,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }
 });
 
-// Código para o toggle das respostas (perguntas e respostas)
-const toggleButtons = document.querySelectorAll('.toggle-resposta');
-
-toggleButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const resposta = button.nextElementSibling;
-    resposta.classList.toggle('visivel');
-
-    if (resposta.classList.contains('visivel')) {
-      button.textContent = '-';
-    } else {
-      button.textContent = '+';
-    }
-  });
-});
