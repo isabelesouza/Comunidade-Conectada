@@ -8,9 +8,6 @@
   box-sizing: border-box;
 }
 
-header {
-  position: relative;
-}
 header img.platform-icon {
   width: 200px; /* Ajuste o tamanho conforme desejado */
   height: auto; /* Mantém a proporção */
