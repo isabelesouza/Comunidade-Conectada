@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 header {
   position: relative;
 }
@@ -33,13 +34,6 @@ header {
   position: relative;
 }
 
-header img.platform-icon {
-  width: 100px; /* Tamanho do ícone */
-  height: auto;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-}
 
 header h1 {
   color: #6a0dad; /* Roxo */
