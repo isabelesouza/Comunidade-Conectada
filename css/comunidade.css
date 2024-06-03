@@ -66,15 +66,14 @@ main {
 }
 
 .card .icon {
-  width: 200px; /* Ajusta o tamanho dos ícones */
+  width: 50%; /* Ajusta o tamanho dos ícones */
   height: auto;
   margin-bottom: 15px;
 }
 
 .card .preview {
-  width: 70%; /* Ajusta o tamanho da prévia do fórum */
+  width: 50%; /* Ajusta o tamanho da prévia do fórum */
   height: auto;
-  border-radius: 10px;
   margin-bottom: 15px;
 }
 
