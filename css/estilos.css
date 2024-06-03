@@ -132,25 +132,6 @@ main p {
   color: #333; /* Cor do texto padrão */
 }
 
-.toggle-resposta {
-  background-color: #6a0dad; /* Roxo */
-  color: #fff; /* Cor do texto branco */
-  border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-
-.toggle-resposta:hover {
-  background-color: #531e8d; /* Roxo mais escuro */
-}
-
-.resposta {
-  display: none;
-}
-.resposta.visivel {
-  display: block;
-}
 .resposta p {
   color: #333; /* Cor do texto padrão */
 }
