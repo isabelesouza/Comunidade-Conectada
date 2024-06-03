@@ -2,8 +2,8 @@
 Parse.initialize("Q3pEcxf79nhzSsRYowq93HY4Eme1upKmQRraBniV", "4peCZEKDyphTZXz1XzvKk9xhHRw2G4KwPqZTEJoz");
 Parse.serverURL = "https://parseapi.back4app.com/";
 
-document.addEventListener('DOMContentLoaded', function() {
-  // Função para cadastrar usuário
+// Função para cadastrar usuário
+document.addEventListener('DOMContentLoaded', (event) => {
   const formCadastro = document.getElementById('formCadastro');
   if (formCadastro) {
     formCadastro.addEventListener('submit', async function(event) {
@@ -32,55 +32,43 @@ document.addEventListener('DOMContentLoaded', function() {
       try {
         await user.signUp();
         alert('Cadastro realizado com sucesso!');
+        formCadastro.reset(); // Limpar os campos do formulário
+        window.location.href = 'login.html'; // Redirecionar para a página de login
       } catch (error) {
         alert('Erro ao cadastrar: ' + error.message);
       }
     });
   }
 
-  // Função para login de usuário
   const loginForm = document.getElementById('loginForm');
   if (loginForm) {
-    loginForm.addEventListener('submit', function(event) {
+    loginForm.addEventListener('submit', async function(event) {
       event.preventDefault();
 
       const email = document.getElementById('loginEmail').value;
       const senha = document.getElementById('loginSenha').value;
 
-      logIn(email, senha);
-    });
-  }
-
-  function logIn(email, senha) {
-    Parse.User.logIn(email, senha).then(function(user) {
-      alert(`Bem-vindo, ${user.get('nome')}!`);
-      console.log('User logged in successfully with name: ' + user.get("nome") + ' and email: ' + user.get("email"));
-    }).catch(function(error){
-      alert('Erro no login: ' + error.message);
-      console.log("Error: " + error.code + " " + error.message);
-    });
-  }
-
-  const toggleButtons = document.querySelectorAll('.toggle-resposta');
-
-  // Adicione um ouvinte de evento de clique a cada botão
-  toggleButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      // Selecione o ID da resposta associada ao botão atual
-      const respostaId = button.dataset.target;
-
-      // Selecione a resposta associada ao botão atual
-      const resposta = document.getElementById(respostaId);
-
-      // Alternar a exibição da resposta
-      resposta.classList.toggle('visivel');
-
-      // Alterar o texto do botão baseado na visibilidade da resposta
-      if (resposta.classList.contains('visivel')) {
-        button.textContent = '-';
-      } else {
-        button.textContent = '+';
+      try {
+        const user = await Parse.User.logIn(email, senha);
+        alert(`Bem-vindo, ${user.get('nome')}!`);
+        loginForm.reset(); // Limpar os campos do formulário
+        window.location.href = 'index.html'; // Redirecionar para a página inicial
+      } catch (error) {
+        alert('Erro no login: ' + error.message);
       }
     });
+  }
+});
+
+// Código para o toggle das respostas (perguntas e respostas)
+const toggleButtons = document.querySelectorAll('.toggle-resposta');
+
+toggleButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const respostaId = button.dataset.target;
+    const resposta = document.getElementById(respostaId);
+    resposta.classList.toggle('visivel');
+
+    button.textContent = resposta.classList.contains('visivel') ? '-' : '+';
   });
 });
