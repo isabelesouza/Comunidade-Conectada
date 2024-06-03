@@ -8,12 +8,6 @@
   box-sizing: border-box;
 }
 
-header img.platform-icon {
-  width: 200px; /* Ajuste o tamanho conforme desejado */
-  height: auto; /* Mantém a proporção */
-  margin-right: 10px; /* Adiciona um espaço à direita do ícone */
-  margin-top: 10px; /* Adiciona um espaço acima do ícone */
-}
 /* Estilos do corpo e fonte */
 body {
   font-family: 'Lato', sans-serif;
@@ -31,6 +25,13 @@ header {
   position: relative;
 }
 
+header img.platform-icon {
+  width: 200px; /* Tamanho do ícone */
+  height: auto;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
 
 header h1 {
   color: #6a0dad; /* Roxo */
@@ -64,7 +65,7 @@ main {
 }
 
 .card img {
-  width: 100%;
+  width: 80%; /* Ajusta o tamanho das imagens para 80% da largura do card */
   height: auto;
   border-radius: 10px;
   margin-bottom: 15px;
