@@ -65,10 +65,13 @@ const toggleButtons = document.querySelectorAll('.toggle-resposta');
 
 toggleButtons.forEach(button => {
   button.addEventListener('click', () => {
-    const respostaId = button.dataset.target;
-    const resposta = document.getElementById(respostaId);
+    const resposta = button.nextElementSibling;
     resposta.classList.toggle('visivel');
 
-    button.textContent = resposta.classList.contains('visivel') ? '-' : '+';
+    if (resposta.classList.contains('visivel')) {
+      button.textContent = '-';
+    } else {
+      button.textContent = '+';
+    }
   });
 });

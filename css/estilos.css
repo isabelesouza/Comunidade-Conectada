@@ -136,9 +136,11 @@ main p {
 .resposta {
   display: none;
 }
+
 .resposta.visivel {
   display: block;
 }
+
 .resposta p {
   color: #333; /* Cor do texto padrão */
 }
