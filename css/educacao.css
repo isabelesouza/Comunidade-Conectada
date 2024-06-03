@@ -88,6 +88,7 @@ main p {
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
+  display: inline-block;
 }
 
 .card p,
@@ -100,6 +101,16 @@ main p {
 .contact-card a {
   color: #6a0dad;
   text-decoration: underline;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6a0dad;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.card a:hover,
+.contact-card a:hover {
+  background-color: #531e8d; /* Roxo mais escuro */
 }
 
 footer {
