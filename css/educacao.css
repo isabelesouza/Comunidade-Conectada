@@ -8,43 +8,117 @@
   box-sizing: border-box;
 }
 
-/* Estilo dos cards */
-.cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  background-color: #f3f0ff; /* Lilás pastel */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #dcd6f7; /* Lilás pastel mais claro */
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: #6a0dad; /* Roxo */
+  margin: 0;
+  margin-bottom: 20px; /* Aumenta a distância entre o título e as abas */
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  flex: 1 1 200px; /* Garante que os itens se ajustem no espaço disponível */
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #6a0dad; /* Roxo */
+  color: #fff;
+  border-radius: 10px; /* Bordas levemente arredondadas */
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #531e8d; /* Roxo mais escuro */
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+main h2 {
+  margin-bottom: 20px;
+}
+
+main p {
+  margin-bottom: 20px;
+}
+
+/* Estilos para a seção de doações */
+
+.contact-card,
+.donation-form,
+#distribuicao,
+.educacao-card {
+  background-color: #fff;
+  border: 2px solid #6a0dad;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 2px solid #6a0dad;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card p,
+.educacao-content p,
+#distribuicao p {
+  color: #333;
+}
+
+.card a,
+.contact-card a {
+  color: #6a0dad;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #dcd6f7; /* Lilás pastel mais claro */
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .receita {
+    width: 100%; /* Define a largura total para 100% */
+    margin-bottom: 20px; /* Adiciona espaçamento entre as receitas */
   }
-  
-  .card {
-    background-color: #fff;
-    border: 2px solid #6a0dad; /* Roxo */
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    width: calc(50% - 20px); /* Ajusta a largura para ocupar metade da tela com espaçamento */
-  }
-  
-  .card h2 {
-    color: #6a0dad; /* Roxo */
-    margin-bottom: 10px;
-  }
-  
-  .card p {
-    color: #333; /* Cor do texto principal */
-    margin-bottom: 20px;
-  }
-  
-  .card a {
-    display: inline-block;
-    background-color: #6a0dad; /* Roxo */
-    color: #fff; /* Cor do texto do link */
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .card a:hover {
-    background-color: #531e8d; /* Roxo mais escuro */
-  }
-  
+}
