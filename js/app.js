@@ -33,21 +33,26 @@ document.getElementById('formCadastro').addEventListener('submit', async functio
     alert('Erro ao cadastrar: ' + error.message);
   }
 });
+
 // Função para login de usuário
-document.getElementById('loginForm').addEventListener('submit', async function(event) {
+document.getElementById('loginForm').addEventListener('submit', function(event) {
   event.preventDefault();
 
   const email = document.getElementById('loginEmail').value;
   const senha = document.getElementById('loginSenha').value;
 
-  try {
-    const user = await Parse.User.logIn(email, senha);
-    alert(`Bem-vindo, ${user.get('nome')}!`);
-  } catch (error) {
-    alert('Erro no login: ' + error.message);
-  }
+  logIn(email, senha);
 });
 
+function logIn(email, senha) {
+  Parse.User.logIn(email, senha).then(function(user) {
+    alert(`Bem-vindo, ${user.get('nome')}!`);
+    console.log('User logged in successfully with name: ' + user.get("nome") + ' and email: ' + user.get("email"));
+  }).catch(function(error){
+    alert('Erro no login: ' + error.message);
+    console.log("Error: " + error.code + " " + error.message);
+  });
+}
 
 const toggleButtons = document.querySelectorAll('.toggle-resposta');
 
