@@ -89,6 +89,8 @@ main p {
   padding: 20px;
   margin-bottom: 20px;
   display: inline-block;
+  width: calc(33.33% - 20px);
+  vertical-align: top;
 }
 
 .card p,
@@ -99,8 +101,8 @@ main p {
 
 .card a,
 .contact-card a {
-  color: #6a0dad;
-  text-decoration: underline;
+  color: #fff;
+  text-decoration: none;
   display: inline-block;
   padding: 10px 20px;
   background-color: #6a0dad;
@@ -128,8 +130,8 @@ footer p {
 
 /* Responsividade */
 @media (max-width: 600px) {
-  .receita {
-    width: 100%; /* Define a largura total para 100% */
-    margin-bottom: 20px; /* Adiciona espaçamento entre as receitas */
+  .card {
+    width: calc(100% - 20px); /* Define a largura total para 100% com espaçamento */
+    margin-bottom: 20px; /* Adiciona espaçamento entre os cards */
   }
 }
