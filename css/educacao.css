@@ -7,7 +7,16 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+}
+header {
+  position: relative;
+}
+header img.platform-icon {
+  width: 200px; /* Ajuste o tamanho conforme desejado */
+  height: auto; /* Mantém a proporção */
+  margin-right: 10px; /* Adiciona um espaço à direita do ícone */
+  margin-top: 10px; /* Adiciona um espaço acima do ícone */
+}
 body {
   font-family: 'Lato', Arial, sans-serif;
   background-color: #f3f0ff; /* Lilás pastel */
