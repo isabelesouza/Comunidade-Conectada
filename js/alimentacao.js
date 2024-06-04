@@ -21,6 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Default to showing the first tab
+  
   tabs[0].click();
 });

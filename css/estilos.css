@@ -11,10 +11,10 @@ header {
   position: relative;
 }
 header img.platform-icon {
-  width: 200px; /* Ajuste o tamanho conforme desejado */
-  height: auto; /* Mantém a proporção */
-  margin-right: 10px; /* Adiciona um espaço à direita do ícone */
-  margin-top: 10px; /* Adiciona um espaço acima do ícone */
+  width: 200px; 
+  height: auto; 
+  margin-right: 10px; 
+  margin-top: 10px; 
 }
 
 body {
@@ -60,7 +60,7 @@ nav a {
   width: 150px; /* Largura do quadrado */
   height: 150px; /* Altura do quadrado */
   transition: background-color 0.3s;
-  box-sizing: border-box; /* Para incluir padding na largura/altura total */
+  box-sizing: border-box; 
 }
 
 .icon-container:hover {
@@ -68,17 +68,17 @@ nav a {
 }
 
 .icon {
-  width: 80px; /* Largura da imagem */
-  height: 80px; /* Altura da imagem */
-  margin-bottom: 10px; /* Espaçamento entre imagem e texto */
+  width: 80px; 
+  height: 80px;
+  margin-bottom: 10px; 
 }
 
 .icon-container span {
   color: #6a0dad; /* Roxo */
   font-size: 14px; /* Tamanho do texto */
   text-align: center;
-  display: block; /* Para garantir que o texto quebre em várias linhas, se necessário */
-  max-width: 100%; /* Garante que o texto não ultrapasse o container */
+  display: block; 
+  max-width: 100%; 
 }
 
 main {

@@ -12,10 +12,10 @@ header {
   position: relative;
 }
 header img.platform-icon {
-  width: 200px; /* Ajuste o tamanho conforme desejado */
-  height: auto; /* Mantém a proporção */
-  margin-right: 10px; /* Adiciona um espaço à direita do ícone */
-  margin-top: 10px; /* Adiciona um espaço acima do ícone */
+  width: 200px; 
+  height: auto; 
+  margin-right: 10px; 
+  margin-top: 10px; 
 }
 body {
   font-family: 'Lato', Arial, sans-serif;
@@ -34,7 +34,7 @@ header {
 header h1 {
   color: #6a0dad; /* Roxo */
   margin: 0;
-  margin-bottom: 20px; /* Aumenta a distância entre o título e as abas */
+  margin-bottom: 20px; 
 }
 
 
@@ -64,7 +64,7 @@ main {
 }
 
 .card img {
-  width: 80%; /* Ajusta o tamanho das imagens para 80% da largura do card */
+  width: 80%; 
   height: auto;
   border-radius: 10px;
   margin-bottom: 15px;
